@@ -1,6 +1,6 @@
-
+$color-fondo-blanco: black;
 #Titulo {
-    color: black;
+    color: $color-fondo-blanco;
     font-size: 35px;
 }
 .nav-item{
@@ -9,7 +9,21 @@
 
 p {
     margin-left: 25px;
+    margin-right: 25px;
 }
 
+ul li{
+    font-style: italic;
+}
 
-  
+.final{
+    font-size: large;
+    text-align: right;
+    margin-right: 50px;
+    font-weight: 700;
+    .frase{
+        font-style: italic;
+        text-align: center;
+        font-weight: 400;
+    }
+}
