@@ -1,4 +1,15 @@
 $color-fondo-blanco: black;
+$primary-color: #333;
+$background-color-light: #f0f0f0;
+$background-color-dark: #555;
+$text-color-light: white;
+$text-color-dark: white;
+
+
+%sangria{
+    margin-left: 25px;
+    margin-right: 25px;
+}
 #Titulo {
     color: $color-fondo-blanco;
     font-size: 35px;
@@ -8,8 +19,7 @@ $color-fondo-blanco: black;
 }
 
 p {
-    margin-left: 25px;
-    margin-right: 25px;
+    @extend %sangria;
 }
 
 ul li{
@@ -25,5 +35,46 @@ ul li{
         font-style: italic;
         text-align: center;
         font-weight: 400;
+    }
+}
+
+.container-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+#Titulo-central{
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+
+    @media (max-width: 768px) {
+        background-color: $primary-color;
+        color: $text-color-light;
+    }
+}
+
+header {
+    background-color: $background-color-light;
+    padding: 20px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        background-color: $background-color-dark;
     }
 }

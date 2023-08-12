@@ -38,15 +38,15 @@
         mensajes y personajes.
     </p>
 
-    <h2 class="Titulo-central">Libros y sus Autores</h2>
+    <h2 id="Titulo-central">Libros y sus Autores</h2>
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
           <h2>Libros</h2>
           <ul>
-            <li>El principito (The Little Prince)</li>
-            <li>Los miserables (Les Misérables)</li>
-            <li>La vuelta al mundo en 80 dias (Around the World in Eighty Days)</li>
+            <a href="principito.html"><li>El principito (The Little Prince)</li></a>
+            <a href="Los_miserables.html"><li>Los miserables (Les Misérables)</li></a>
+            <a href="La_vuelta_al_mundo.html"><li>La vuelta al mundo en 80 dias (Around the World in Eighty Days)</li></a>
           </ul>
         </div>
         <div class="col-sm-6">
@@ -59,23 +59,32 @@
         </div>
       </div>
     </div>
-    
-    <div class="imagenes">
-      <div class="imagen_1">
-          <img src="/imagenes/principe.jpg" alt="principe">
-          <a href="principito.html"><h4>El principito</h4></a>
+    <!--Parte del carrousel-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/imagenes/principe.jpg"  height="600"class="d-block w-100" alt="Principito">
+          <h3 id="Titulo-central">El principito</h3>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenes/maxresdefault.jpg"  height="600" class="d-block w-100" alt="Mundo">
+          <h3 id="Titulo-central">La vuelta al Mundo en ochenta dias</h3>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/Los-Miserables.jpg" height="600" class="d-block w-100" alt="Los-Miserables">
+          <h3 id="Titulo-central">Los Miserables</h3>
+        </div>
       </div>
-  
-      <div class="imagen_2">
-          <img src="/imagenes/vuelta.jpg" alt="vuelta">
-          <a href="La_vuelta_al_mundo.html"><h4>La vuelta al mundo en ochenta dias</h4></a>
-      </div>
-  
-      <div class="imagen_3">
-          <img src="/imagenes/miserables.jpg" alt="miserables">
-          <a href="Los_miserables.html"><h4>Los miserables</h4></a>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    
     <br>
     <div class="final">
       <p class="frase">Hay más tesoros en los libros que en todo el botín del pirata de “La isla del tesoro”</p>

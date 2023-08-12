@@ -1,3 +1,8 @@
+p {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 #Titulo {
   color: black;
   font-size: 35px;
@@ -5,11 +10,6 @@
 
 .nav-item {
   font-size: 22px;
-}
-
-p {
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 ul li {
@@ -26,4 +26,43 @@ ul li {
   font-style: italic;
   text-align: center;
   font-weight: 400;
+}
+
+.container-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.container-imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Titulo-central {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: #333;
+    color: white;
+  }
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header {
+    background-color: #555;
+  }
 }/*# sourceMappingURL=styles.css.map */
